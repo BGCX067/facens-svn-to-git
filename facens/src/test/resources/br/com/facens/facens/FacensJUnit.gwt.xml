@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='br.com.facens.facens.Facens' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/Facens/greet" class="br.com.facens.facens.server.GreetingServiceImpl" />
+
+</module>

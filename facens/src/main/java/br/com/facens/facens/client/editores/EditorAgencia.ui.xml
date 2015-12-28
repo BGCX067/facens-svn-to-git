@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.label {
+			width: 150px;
+		}
+		
+		.txtgrande {
+			width: 250px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+
+		<g:HorizontalPanel>
+			<g:Label styleName="{style.label}">Código Agencia:</g:Label>
+			<g:TextBox ui:field="txtCodAgencia"/>
+			<g:Button ui:field="btnConsultar">Consultar</g:Button>
+		</g:HorizontalPanel>
+
+		<g:HorizontalPanel>
+			<g:Label styleName="{style.label}">Nome:</g:Label>
+			<g:TextBox styleName="{style.txtgrande}" ui:field="txtNome"/>
+		</g:HorizontalPanel>
+
+		<g:HorizontalPanel>
+			<g:Label styleName="{style.label}">CNPJ:</g:Label>
+			<g:TextBox ui:field="txtCNPJ"/>
+			<g:CheckBox ui:field="ckbAtiva">Agencia Ativa</g:CheckBox>
+		</g:HorizontalPanel>
+
+		<g:HorizontalPanel>
+			<g:Label styleName="{style.label}">Endereço:</g:Label>
+			<g:TextBox ui:field="txtEnd"/>
+		</g:HorizontalPanel>
+
+		<g:HorizontalPanel spacing="5">
+			<g:Button text="Salvar" ui:field="btnSalvar" />
+			<g:Button text="Desativar" ui:field="desativar" />
+			<g:Button text="Reativar" />
+		</g:HorizontalPanel>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
